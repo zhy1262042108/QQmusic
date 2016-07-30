@@ -1,0 +1,404 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.player{
+	width: 540px;
+	min-height: 495px;
+	margin: 0 auto;
+	position: relative;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.mini-player{
+	width: 540px;
+	height: 115px;
+	background: #000;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 2;
+
+}
+.tishika{
+	width: 50px;
+	height: 20px;
+	background: #ccc;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	bottom: 14px;
+	left: 0;
+	display: none;
+}
+.sanjiao{
+	width: 0;
+	height: 0;
+	border-top: 4px solid #fff;
+	border-left: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid transparent;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    display: none;
+}
+.jingdutiao{
+    width: 540px;
+    height: 4px;
+    background: #626262;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.jingdutiao .yuandian1{
+	display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    z-index: 5;
+    cursor: pointer;
+}
+.jingdutiao .heng1{
+	display: block;
+	width: 0%;
+	height: 3px;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	background: #0dc65b;
+}
+.player-list{
+	width: 540px;
+	min-height: 380px;
+	background: rgba(0,0,0,0.8);
+	transition:all .8s ease;
+	transform:translateY(100%);
+}
+.play-list1{
+	width: 115px;
+	height: 50px;
+	float: left;
+	background: #262626;
+	text-align: center;
+	font-size: 18px;
+}
+.removeall{
+	width: 115px;
+	height: 50px;
+	float: right;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+}
+.player-list-title{
+	width:540px;
+	height: 50px;
+	background: #000;
+	color: #8b8b8b;
+    line-height: 50px;
+}
+.player-list ul li{
+	width: 540px;
+	height: 28px;
+	position: relative;
+	margin-top: 2px;
+}
+.player-list ul li:hover div{
+	background: #000;
+	color: #fff;
+}
+.player-list ul li div{
+    float: left;
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+}
+.player-list ul li.playing div{
+	color: #0cc65b;
+}
+.player-list ul li .song{
+	width: 270px;
+	padding: 0 0 0 20px;
+}
+.player-list ul li .name{
+	width: 190px;
+}
+.player-list ul li .time{
+	width: 60px;
+	height: 28px;
+}
+.song-info{
+	display: block;
+	width: 90px;
+	height: 90px;
+	margin: 10px;
+	float: left;
+}
+.song-info img{
+	width: 100%;
+	height: 100%;
+}
+.music_info_main {
+	width: 300px;
+	height: 80px;
+	float: left;
+}
+.music_info_main .music-name{
+	float: left;
+	width: 300px;
+    height: 20px;
+    margin: 5px 0;
+    overflow: hidden;
+    color: #fff;
+    line-height: 1.5em;
+}
+.music_info_main .music-name span{
+	float: left;
+}
+.music_info_main .music-name a{
+	display: block;
+	width: 75px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+	overflow: hidden;
+	background: url(../images/player_bg.png)no-repeat -453px -55px;
+}
+.music_info_main .singer-name{
+	color: #828282;
+    display: block;
+    width: 120px;
+    height: 20px;
+    overflow: hidden;
+}
+.music_info_main .time1{
+	display: block;
+	width: 120px;
+	height: 20px;
+	color: #828282;
+}
+.big-play-list{
+	background: url(../images/player_bg.png) no-repeat -222px -97px;
+    display: inline-block;
+    width: 47px;
+    height: 28px;
+    border: 0px none;
+    position: absolute;
+    top: 0px;
+    right: 61px;
+    cursor: pointer;
+}
+.player-list.animation{
+	
+	transform:translateY(0);
+}
+.big-play-list .value{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 3px;
+	left: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 20px;
+
+}
+.music-op{
+	width: 280px;
+	height: 42px;
+	position: absolute;
+	left: 248px;
+    top: 43px;
+}
+.music-op div{
+	display: block;
+    vertical-align: top;
+    width: 36px;
+    height: 28px;
+    float: left;
+    margin: 7px 0 0 3px;
+    border: 0px none;
+    cursor: pointer;
+	background: url(../images/player_bg.png)no-repeat;
+}
+.music-op .pre{
+    background-position: -69px 0;
+}
+.music-op .pre:hover{
+	background-position: -69px -32px;
+}
+.music-op .play{
+	width: 42px;
+	height: 42px;
+	margin-top: 0;
+    background-position: -105px 0;
+}
+.music-op .play.audio1{
+	width: 42px;
+	height: 42px;
+	margin-top: 0;
+    background-position: -293px -88px;
+}
+.music-op .play.audio1:hover{
+	width: 42px;
+	height: 42px;
+	margin-top: 0;
+    background-position: -335px -88px;
+}
+.music-op .play:hover{
+	background-position: -105px -42px;
+}
+.music-op .next{
+    background-position: -147px 0;
+}
+.music-op .next:hover{
+	background-position: -147px -32px;
+}
+.music-op .playway{
+	position: relative;
+    background-position: -219px 0;
+}
+.music-op .playway:hover{
+    background-position: -219px -32px;
+}
+.music-op .playway .playwaybox{
+	width: 34px;
+	height: 112px;
+	background: red;
+	position: absolute;
+	bottom: 28px;
+	left: -3px;
+	display: none;
+}
+.music-op .playway .playwaybox span{
+	display: block;
+	width: 34px;
+	height: 28px;
+	background: url(../images/player_bg.png)no-repeat;
+}
+.music-op .playway .playwaybox .repeatall{
+	background-position: -219px 0;
+}
+.music-op .playway .playwaybox .repeatone{
+	background-position: -255px 0;
+}
+.music-op .playway .playwaybox .orderplay{
+	background-position: -291px -32px;
+}
+.music-op .playway .playwaybox .randomplay{
+	background-position: -327px -32px;
+}
+.music-op .playway .playwaybox .repeatall:hover{
+	background-position: -219px -32px;
+}
+.music-op .playway .playwaybox .repeatone:hover{
+	background-position: -255px -32px;
+}
+.music-op .playway .playwaybox .orderplay:hover{
+	background-position: -291px -60px;
+}
+.music-op .playway .playwaybox .randomplay:hover{
+	background-position: -327px -60px;
+}
+.music-op .volume{
+	display: inline-block;
+    width: 100px;
+    height: 24px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.music-op .volume .lb{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../images/player_bg.png)no-repeat -189px -3px;
+	cursor: pointer;
+}
+.music-op .volume .lb:hover{
+    background: url(../images/player_bg.png)no-repeat -189px -35px;
+}
+.music-op .volume .lb.active{
+	background: url(../images/player_bg.png)no-repeat -152px -63px;
+}
+.music-op .volume .lb.active:hover{
+	background: url(../images/player_bg.png)no-repeat -189px -63px;
+}
+.music-op .volume .yl{
+	display: inline-block;
+	 background: url(../images/player_bg.png) no-repeat -291px -11px; 
+    width: 71px;
+    height: 11px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: 35%;
+
+}
+.music-op .volume .yl .yuandian{
+	background: url(../images/player_bg.png) no-repeat -366px 0px;
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    
+}
+.music-op .volume .yl .heng{
+	width: 0%;
+    background: url(../images/player_bg.png) no-repeat -291px 0px;
+    display: inline-block;
+    height: 11px;
+    position: absolute;
+    top:0%;
+    line-height: 24px;
+}
+
+.player-list ul li .list-cp{
+	width: 142px;
+	height:15px;
+    text-align: right;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: none;
+}
+.player-list ul li .list-cp span{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: red;
+}
+.player-list ul li .list-cp .like {
+	background: url(../images/player_bg.png) no-repeat;
+    background-position: 0px -127px;
+}
+.player-list ul li .list-cp .share {
+	background: url(../images/player_bg.png) no-repeat;
+    background-position: -16px -127px;
+}
+.player-list ul li .list-cp .fav {
+	background: url(../images/player_bg.png) no-repeat;
+    background-position: -64px -127px;
+}
+.player-list ul li .list-cp .del {
+	background: url(../images/player_bg.png) no-repeat;
+    background-position: -48px -127px;
+}
+.player-list ul li:hover .list-cp{
+	display: block;
+};
